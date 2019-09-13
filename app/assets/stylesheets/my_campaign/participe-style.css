@@ -1,0 +1,256 @@
+.title img{
+    width: 75px;
+    position: relative;
+    left: -215px;
+}
+
+/* Hamburger avec menu défilant */
+ul { list-style: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+a { text-decoration: none; 
+	color: black;
+}
+
+#menu-wrapper {
+    overflow: hidden;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+#menu-wrapper #hamburger-menu {
+    position: relative;
+    width: 25px;
+    height: 35px;
+	left: 430px;
+	top: 8px;
+}
+
+#menu-wrapper #hamburger-menu span {
+    opacity: 1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    color: black;
+    background-color: black;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .4s ease-in-out;
+}
+
+#menu-wrapper #hamburger-menu span:nth-child(1) {
+    top: 0;
+}
+#menu-wrapper #hamburger-menu span:nth-child(2) {
+    top: 9px;
+}
+#menu-wrapper #hamburger-menu span:nth-child(3) {
+    top: 18px;
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(1) {
+    transform: translateY(9px) rotate(135deg);
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+#menu-wrapper #hamburger-menu.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-135deg);
+}
+
+#menu-container .menu-list .menu-submenu {
+    padding: 15px 35px 15px;
+}
+#menu-container .menu-list {
+    padding-left: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 330px;
+    background: white;
+    box-shadow: rgba(100,100,100,0.2) 6px 2px 10px;
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 100%;
+	margin-left: 105px; /* Permet de pousser la liste des menu hamburger*/
+}
+
+#menu-container .menu-list li.accordion-toggle, #menu-container .menu-list .menu-login {
+    font-size: 16px;
+	padding: 20px;
+    text-transform: uppercase;
+    border-top: 1px solid #dbdcd2;
+}
+#menu-container .menu-list li:first-of-type {
+    border-top: 0;
+}
+
+.accordion-toggle, .accordion-content {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+  .accordion-content {
+    display: none;
+}
+
+.accordion-toggle a:before, .accordion-toggle a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 15px;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #5a5858;
+    transform-origin: 50% 50%;
+    transition: all 0.3s ease-out;
+}
+
+.accordion-toggle a:before {
+    transform: rotate(-90deg);
+    opacity: 1;
+    z-index: 2;
+}
+
+.accordion-toggle.active-tab {
+  background: #303030;
+  transition: all 0.3s ease;
+}
+.accordion-toggle a.active:before {
+    transform: rotate(0deg);
+    background: #fff !important;
+}
+
+.accordion-toggle a.active:after {
+    transform: rotate(180deg);
+    background: #fff !important;
+    opacity: 0;
+}
+
+/* Card */
+p {
+	font-size: 11px;
+    color: #626262;
+    font-family: "Roboto", sans-serif;
+}
+
+.card1 {
+	display: grid;
+	grid-template-columns: 122px 250px 110px;
+	height: 90px;
+	margin: 5% auto;
+	max-width: 500px;
+	border-radius: 15px;
+	position: relative;
+    transition: margin 0.6s ease-in-out;
+    background-color: #fff;
+}
+
+.card1 > .entry {
+	height: 100%;
+	position: absolute ;
+	top: 0;
+	right: 125px;
+	background: white;
+	transition-delay: 0.2s
+}
+
+.card1 > .entry > .container{
+	position: relative;
+	width: 250px;
+}
+
+.card1 > .entry, .card1 > .entry > .container > .text {
+
+    top: 0;
+    left: 125px;
+	position: absolute;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+ }
+ 
+ .card1 > .entry > .container > .text {
+	left: 0;
+	transition-delay: 0.4s
+}
+
+.card1 >.entry h1, .card1 > .entry p {
+	text-shadow: 0 0 0 #303030;
+	transition-delay: 0.4s;
+}
+
+.card1 > .entry .meta {
+	font-size: 12px;
+	color: #c9c9c9;
+	padding-left: 10px;
+	text-align: right;
+}
+
+.card1 > .entry > .container > .text h1, .card1 > .entry > .container > .text p {
+    padding: 9px 0 0 30px;
+}
+
+.card1 > .image {
+	left: 0;
+	top: 0;
+	position: relative;
+	height: 88px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.card1 > .image > img {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.img-report{
+    max-width: 100%;
+    height: 100%;
+}
+
+.img-flag {
+    max-width: 100%;
+    height: 20px;
+    position: relative;
+    top: 6px;
+}
+
+.card1:hover {
+	margin: 5.5% auto;
+    cursor: pointer;
+}
+
+.parameter {
+	height: 100%;
+	position: absolute ;
+	top: 5px;
+	right: 0px;
+	width: 126px;
+}
+
+.parameter > .parameter-detail{
+    padding: 18px;
+    font-size: 24px;
+}
+
+.trait{
+    display: block;
+    float: left;
+    width: 70px;
+    margin-left: -37px;
+    margin-top: 5px;
+    color: #303030;
+}
+
+.menu-link{
+    pointer-events: none;
+}

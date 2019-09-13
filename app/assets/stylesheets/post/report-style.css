@@ -1,0 +1,196 @@
+/* carrousel image */
+.slider {
+    /* line them up horizontally */
+    display: flex;
+  
+    /* allow for scrolling */
+    overflow-x: auto;
+  
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+    /* each slide snaps into place */
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+}
+.slider > .slider-img {
+    flex-shrink: 0;
+    width: 250px;
+    height: 185px;
+    margin-left: 0px;
+    margin-right: 10px; 
+}
+
+.slider-img img{
+    border: 1px solid #303030;
+    border-radius: 15px;
+    width: 100%;
+    height: 130px;
+    margin: 15px 10px;
+}
+
+.slider-img .small-icon{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 80px;
+    left: 15px;
+}
+
+.wrapInfoPost .number{
+    position: relative;
+    bottom: 130px;
+    left: 60px;
+    font-size: 16px;
+    color: white;
+}
+
+.name-country{
+    font-family: 'roboto';
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: 105px;
+}
+
+
+/* main title*/
+.campaign-detail{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+    color: #8c8b8b; 
+}
+
+.campaign-detail .post-description{    
+    font-family: 'roboto light', sans-serif;
+    font-size: 15px;
+    font-style: oblique;
+    padding-top: 20px;
+    color: #d1cfcf; 
+    display: inline-block;
+}
+
+.description-type{
+    font-family:'roboto', sans-serif;
+    text-align: justify;
+    background-color: #ffffff;
+}
+
+.float-image{
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 5px 10px;
+}
+
+.flag-title{
+    max-width: 100%;
+    height: 22px;
+    margin-left: 10px;
+}
+
+.capital-country{
+    font-size: 13px;
+    color: #8c8b8b;
+    margin: 5px;
+}
+
+.green-point{
+    max-width: 100%;
+    height: 22px;
+    margin: 0px 5px;
+}
+
+.number{
+    font-family:'roboto', sans-serif;
+    font-size: 30px;
+    font-style: bold;
+}
+
+.numberStarPoint{
+    max-width: 100%;
+    height: 25px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.icon-article{
+    max-width: 100%;
+    width: 30px;
+    position: relative;
+    left: -275px;
+    bottom: -45px;
+}
+
+.number-like{
+    position: relative;
+    font-size: 16px;
+    color: white;
+    left: -155px;
+    top: 20px;
+}
+
+.date{
+    margin: 5px;
+    color: #8c8b8b;
+    display: flex;
+    text-align: start;
+}
+
+/*fa social-network*/
+
+.network-title{
+    font-family: 'roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #d1cfcf;
+    position: relative;
+    left: 50px;
+    margin-top: 15px;
+}
+
+.logo-network{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    margin: 15px 10px 5px 15px;
+}
+
+.logo-network img{
+    width: 45px;
+    height: 45px;
+    margin-left: 30px;
+}
+
+.logo-network p{
+    text-align: center;
+    margin-left: 30px;
+}
+
+
+.money1 p{
+    text-align: center;
+    font-family:'roboto', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #303030;
+    margin-top: -65px;
+}
+
+/*button money*/
+.buttom-money{
+    border: 1px solid #303030;
+    border-radius: 10px;
+    background-color: #303030;
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+    margin: 10px 50px 60px 355px;
+}
+
+button{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 25px;
+}

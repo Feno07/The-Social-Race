@@ -1,0 +1,69 @@
+/*Rectangle up*/
+.login-logo {
+    font-family:"roboto", sans-serif;
+    background-color: #303030;
+    width: 100%;
+    height: 75px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+
+.return{
+    width: 75px;
+    position: relative;
+    left: -200px;
+}
+
+.c_title{
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    bottom: 60px;
+}
+
+/*Footer de base*/
+.footer-division {
+    background-color: #303030;
+    display: flex;
+}
+.footer-division img {
+	width: 70px;
+	height: 70px;
+    margin-top: -9px;
+    margin-left: 30px;
+    padding: 12px;
+}
+.footer-division a {
+	flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-content: stretch;
+}
+
+.footer-division img:hover{
+    border: 10px solid black;
+    border-radius: 100px 100px;
+    border-color: #303030;
+}
+
+* {
+    margin: 0;
+}
+html {
+    font-size: 16px;
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #eee;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #menu-container{
+    width: 100%;
+}

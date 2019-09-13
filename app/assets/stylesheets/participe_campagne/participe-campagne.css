@@ -1,0 +1,117 @@
+/* main title*/
+.title-campaign {
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    padding-left: 190px;
+}
+
+.campaign-detail{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.campaign-detail .post-description{
+    display: inline-block;  
+    font-family: 'roboto light', sans-serif;
+    font-size: 15px;
+    font-style: oblique;
+    padding-top: 20px;
+    color: black;
+}
+
+.campaign-detail .description{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+    color: #8c8b8b; 
+}
+
+.float-image{
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 1em;
+}
+
+/*Barre de séparation*/
+.drawn-separate hr { 
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-style: inset;
+    border-width: 1px;
+    color: #b4b4b4;
+  }
+
+/*radio bouton*/
+.choice-network{
+    height : 100%;
+    width: 100%;
+}
+
+.network-left{
+    float: left;
+    height: 50px;
+    margin-left: 70px;
+}
+
+.network-right{
+    height: 100px;
+    margin-left: 50%;
+}
+
+.net-instagram{
+    color: #c83947;
+}
+
+.tiktok{
+    width: 17px;
+    height: 17px;
+}
+
+.net-tiktok{
+    color: #050505;
+}
+
+.net-linkedin{
+    color: #063eb0;
+}
+
+.net-facebook{
+    color: #2a62fe;
+}
+
+.net-pinterest{
+    color: #bd081c;
+}
+
+.net-twitter{
+    color: #42c0fb;
+}
+
+.buttom-submit{
+    position: relative;
+    width: 55px;
+    text-align: center;
+    margin-top: 9px;
+    margin-left: 105px;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    background-color: #303030;
+}
+
+.buttom-anulation{
+    color: white;
+    position: relative;
+    width: 55px;
+    text-align: center;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    background-color: #303030;
+    margin-top: -26px;
+    margin-left: 235px;
+    margin-bottom: 25px;
+}

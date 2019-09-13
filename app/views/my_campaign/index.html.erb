@@ -1,0 +1,135 @@
+<link rel="stylesheet" href="css/particpe-style.css">
+
+<body class="animsition">
+	<!-- <div class="page-wrapper"> -->
+		<div class="page-content--bge5">
+			<div class="container">
+				<div class="login-wrap">
+					<div class="login-content">
+						<div class="login-logo">
+						    <div class="title"><span><a href="<%= fbVerification_path %>"><%= image_tag '/image/icone/pictogramme/retour.png', class: 'return' %></span></a>
+							<p class="c_title">Campagne auquelles je participe</p>
+							</div>
+						</div>
+						
+					</div>
+					<header>
+						<div id="menu-container">
+								<div id="menu-wrapper">
+									<div id="hamburger-menu"><span></span><span></span><span></span></div>
+									<!-- hamburger-menu -->
+								</div>
+								<!-- menu-wrapper -->
+								<ul class="menu-list accordion">
+									<li id="nav1" class="toggle accordion-toggle"> 
+										<span class="icon-plus"></span>
+											<a class="menu-link" href="#">Classement par:</a>
+									</li>
+									<!-- accordion-toggle -->
+									<ul class="menu-submenu accordion-content">
+										<li><a class="head" href="#">Date</a></li>
+										<li><a class="head" href="#">Du plus cher au moins cher</a></li>
+										<li><a class="head" href="#">Du moins au plus cher</a></li>
+										<li><a class="head" href="#">Du plus ancien au plus récent</a></li>
+										<li><a class="head" href="#">Pays</a></li>
+									</ul>
+						</div> 
+					</header>
+					<main class="main-card">
+							<article class="card1">
+								<div class="image">
+									<%= image_tag '/image/fond/ville.jpg', alt: 'ville', class: "img-report" %>
+								</div>
+								<div class="entry">
+									<div class="container">
+										<div class="text">
+											<p class="text-description">Campagne A<span class="meta"><%= image_tag '/image/icone/drapeau/mg.png', alt: 'mg', class: "img-flag" %></span></br>14 juin 2019</br>@ client #TheSocialRace</p>
+										</div>
+									</div>
+								</div>
+								<div class="parameter">
+									<%= image_tag '/image/icone/pictogramme/trait.png', alt: 'trait', class: "trait" %>
+									<p class="parameter-detail">Détails</p>
+								</div>
+							</article>
+						</main>
+						<main class="main-card">
+								<article class="card1">
+									<div class="image">
+										<%= image_tag '/image/fond/ville.jpg', alt: 'ville', class: "img-report" %>
+									</div>
+									<div class="entry">
+										<div class="container">
+											<div class="text">
+												<p class="text-description">Campagne B<span class="meta"><%= image_tag '/image/icone/drapeau/mg.png', alt: 'mg', class: "img-flag" %></span></br>14 juin 2019</br>@ client #TheSocialRace</p>
+											</div>
+										</div>
+									</div>
+									<div class="parameter">
+										<%= image_tag '/image/icone/pictogramme/trait.png', alt: 'trait', class: "trait" %>
+										<p class="parameter-detail">Détails</p>
+									</div>
+								</article>
+						</main>
+						<main class="main-card">
+								<article class="card1">
+									<div class="image">
+				                        <%= image_tag '/image/fond/ville.jpg', alt: 'ville', class: "img-report" %>
+									</div>
+									<div class="entry">
+										<div class="container">
+											<div class="text">
+												<p class="text-description">Campagne C<span class="meta"><%= image_tag '/image/icone/drapeau/mg.png', alt: 'mg', class: "img-flag" %></span> </br>07 juillet 2019</br>@ client #TheSocialRace</p>
+											</div>
+										</div>
+									</div>
+									<div class="parameter">
+										<%= image_tag '/image/icone/pictogramme/trait.png', alt: 'trait', class: "trait" %>
+										<p class="parameter-detail">Détails</p>
+									</div>
+								</article>
+						</main>
+						<main class="main-card">
+								<article class="card1">
+									<div class="image">
+										<%= image_tag '/image/fond/ville.jpg', alt: 'ville', class: "img-report" %>
+									</div>
+									<div class="entry">
+										<div class="container">
+											<div class="text">
+												<p class="text-description">Campagne D<span class="meta"><%= image_tag '/image/icone/drapeau/mg.png', alt: 'mg', class: "img-flag" %></span> </br>03 Mars 2019</br>@ client #TheSocialRace</p>
+											</div>
+										</div>
+									</div>
+									<div class="parameter">
+										<%= image_tag '/image/icone/pictogramme/trait.png', alt: 'trait', class: "trait" %>
+										<p class="parameter-detail">Détails</p>
+									</div>
+								</article>
+						</main>
+
+					<div class="footer-division">
+						<a href="">
+							<%= image_tag "/image/footer/Loupe.png", alt: "loop", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Coeur.png", alt: "Coeur", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Euro.png", alt: "Euro", class: 'picto' %>
+						</a>
+						<a href="<%= message_path %>">
+							<%= image_tag "/image/footer/Message.png", alt: "Message", class: 'picto' %>
+						</a>
+						<a href="<%= profil_path %>">
+							<%= image_tag "/image/footer/Profile.png", alt: "Profile", class: 'picto' %>
+						</a>
+					</div>
+			    </div>
+	        </div>
+        </div>
+
+		<%# a voir car l'hamburger ne fonctionne pas %>
+	<script src="app/assets/javascript/main-campagne.js"></script>
+</body>
+

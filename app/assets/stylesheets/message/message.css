@@ -1,0 +1,172 @@
+/*Menu*/
+.menu-message{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    align-content:center;
+    width:100%;
+  }
+    
+  .menu{
+      height:90px;
+      background-color:#eee;
+      border-radius:5px;
+      overflow: hidden;
+      display:flex;
+      justify-content:space-between;
+  }
+  
+  .menu-item{
+      color:#a0a0a0;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      align-content:center;
+      width:150px;
+      cursor:pointer;
+      transition:all 0.3s linear;
+  }
+  
+  .inbox-in{
+      border-bottom:5px solid #303030;
+      color: black; 
+  }
+  
+  .inbox-out{
+      border-bottom:5px solid #303030;
+      color:black;
+  }
+        
+  .recycle{
+      border-bottom:5px solid #303030;
+      color: black;
+  }
+  
+  .menu-item:hover{
+      -webkit-box-shadow: 0px 0px 50px 21px rgba(0,0,0,0.72); 
+       box-shadow: 0px 0px 500px 200px rgba(0,0,0,0.5);
+  }
+  
+  /* Card */
+  p {
+      font-size: 11px;
+      color: #626262;
+      font-family: "Roboto", sans-serif;
+  }
+  
+  .card {
+      display: grid;
+      grid-template-columns: 122px 250px 110px;
+      height: 90px;
+      margin: 3% auto;
+      max-width: 500px;
+      border-radius: 15px;
+      position: relative;
+      transition: margin 0.6s ease-in-out;
+      background-color: #fff;
+  }
+  
+  .card > .entry {
+      height: 100%;
+      position: absolute ;
+      top: 0;
+      right: 125px;
+      background: white;
+      transition-delay: 0.2s
+  }
+  
+  .card > .entry > .container{
+      position: relative;
+      width: 250px;
+  }
+  
+  .card > .entry, .card > .entry > .container > .text {
+      top: 0;
+      position: absolute;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+   }
+   
+  
+  .card > .entry .meta {
+      font-size: 12px;
+      color: #c9c9c9;
+      padding-left: 10px;
+      text-align: right;
+  }
+  
+  .card > .entry > .container > .text h1, .card > .entry > .container > .text p {
+      padding: 9px 0 0 30px;
+  }
+  
+  .card > .image {
+      left: 0;
+      top: 0;
+      position: relative;
+      height: 89px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+  }
+  
+  .card > .image > img {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      margin-left: 10px;
+  }
+  
+  .img-envelope{
+      max-width: 100%;
+      height: 100%;
+  }
+  
+  .img > .img-envelope:hover{
+      color: bleu;
+  }
+  
+  .image {
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+  }
+  
+  .parametere {
+      height: 100%;
+      position: absolute ;
+      top: 5px;
+      right: 0px;
+      width: 126px;
+  }
+  
+  .parametere > .advence{
+      padding: 18px;
+      font-size: 26px;
+  }
+  
+  .parametere > img{
+      width: 80px;
+      padding: 18px;
+      margin-left: 42px;
+      background-color: #b8cee8;
+  }
+  
+  /*buttom send*/
+  .send-message{
+      border: 1px solid #303030;
+      border-radius: 50%;
+      background: #303030;
+      width: 70px;
+      height: 70px;
+      position: relative;
+      left: 380px;
+      bottom: 7px;;
+  }
+  
+  .send-message img{
+    width: 35px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+  }

@@ -1,0 +1,66 @@
+/* main title*/
+.title-campaign {
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+    padding-left: 190px;
+}
+
+.flag{
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.campaign-detail{
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+    color: #8c8b8b; 
+}
+
+.campaign-detail .post-description{
+    font-family: 'roboto light', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    color: #8c8b8b; 
+}
+/*Barre de séparation*/
+.drawn-separate hr { 
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-style: inset;
+    border-width: 1px;
+    color: #b4b4b4;
+  }
+
+/*Disposition des photos*/
+.diaporama-position{
+    width: 130px;
+    height: 110px;
+    border: 1px solid #303030;
+    border-radius: 10px;
+    margin: 15px 40px 20px;
+}
+
+/*Bouton camera*/
+.activation-camera{
+    width: 40px;
+    height: 40px;
+    background: #303030;
+    border-radius: 50%;    
+    position: relative;
+    left: 330px;
+    bottom: 10px;
+}
+
+.activation-camera span{
+    color: white;
+    position: relative;
+    top: -5px;
+    right: 6px;
+}
+

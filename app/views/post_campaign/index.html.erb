@@ -1,0 +1,81 @@
+		<%= @campaign_selected.id %>
+		<div class="page-content--bge5">
+			<div class="container">
+				<div class="login-wrap">
+					<div class="login-content">
+						<div class="login-logo">
+							<div class="title"><span><a href=""><img src="/image/icone/pictogramme/retour.png" alt="return-bottom", class= 'return'></span></a>
+								<p class="c_title">Participe campagne</p>
+							</div>
+						</div>
+					</div>
+					<!-- Swiper -->
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="swiper-campagne">
+									<div class="swiper-title">
+										<h4><%= @campaign_selected.name %></h4>
+									</div>
+									<% @campaign_galery_images.each do |cpi|%>
+										<div class="swiper-head">
+											<img src="/image/fond/<%= cpi.name %>" alt="building" class="ImgCamp"/>
+											<h2 class="country"><%= @campaign_selected.location %></h2>
+											<%= image_tag '/image/icone/drapeau/canada.png', alt: 'canada', class: "img-flag" %>
+										</div>
+									<% end%>
+									<div class="swiper-description">
+										<p>Date de lancement de la campagne: <%= @campaign_selected.date%>
+										</br>Budget: 500€
+										<br>Déjà gagné: 275€
+										<br>Reste à gagné: 225€
+									</p>
+								</div>
+								<div class="swiper-brief">
+									<h3 class="title">Brief</h3>
+									<p class="definition">
+										<%= @campaign_selected.description %>
+									</p>
+								</div>
+								<hr class="separate">
+								<div class="swiper-tag">
+									<h3 class="tag-identity">Tag et compte à identifier</h3><span class="fas fa-chevron-right"></span>
+									<p><%= @campaign_selected.hashtag %></p>
+								</div>
+								<hr class="separate">
+								<div class="swiper-type">
+									<h3 class="type">Type de campagne</h3><span class="fas fa-chevron-right"></span>
+								</div>
+								<hr class="separate">
+								<div class="swiper-criterion">
+									<h3 class="criterion">Critère et taille apprécié</h3><span class="fas fa-chevron-right"></span>
+								</div>
+								<hr class="separate">
+								<div class="bottom">
+									<a href="<%= participe_path(id: @campaign_selected.id) %>" class="bottom_participe bouton"><span></span>Participer</a>
+									<a href="" class="bottom-liste bouton"><span></span>Liste</a>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<img src="/image/fond/ville.jpg" alt="ville" class="ImgCamp"/>
+						</div>
+					</div>
+				</div>
+				<div class="footer-division">
+					<a href="">
+						<%= image_tag "/image/footer/Loupe.png", alt: "loop", class: 'picto' %>
+					</a>
+					<a href="">
+						<%= image_tag "/image/footer/Coeur.png", alt: "Coeur", class: 'picto' %>
+					</a>
+					<a href="">
+						<%= image_tag "/image/footer/Euro.png", alt: "Euro", class: 'picto' %>
+					</a>
+					<a href="<%= message_path %>">
+						<%= image_tag "/image/footer/Message.png", alt: "Message", class: 'picto' %>
+					</a>
+					<a href="<%= profil_path %>">
+						<%= image_tag "/image/footer/Profile.png", alt: "Profile", class: 'picto' %>
+					</a>
+				</div>  

@@ -1,0 +1,82 @@
+/*TheSocialRace Title*/
+.header-welcome{
+    position: relative;
+    right: 45px;
+    bottom: -130px;
+    color: white;
+}
+
+.header-title{
+    margin: 125px;
+    color: white;
+}
+
+.social-button {
+	display: flex;
+	flex-direction : column;
+	align-items : center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+.social-button .fa-facebook {
+	background-color: #2a62fe;
+	width: 305px;
+	border-radius: 10px;
+	color: white;
+    font-size: 20px;
+    margin: 50px;
+}
+.social-button span {
+	font-family: 'Roboto', sans-serif;
+}
+.social-button a:first-child  {
+	margin-bottom: 20px;
+}
+.social-button a:last-child  {
+	margin-bottom: 145px;
+}
+.social-button .fa-instagram {
+	background-color: #c83947;
+	width: 305px;
+	border-radius: 10px;
+	color: white;
+	font-size: 20px;
+}
+.social-button span {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*Responsive app*/
+@media only screen and (max-width: 320px) {
+    .social-button .fa-facebook {
+     width: 80%; 
+    }
+    .social-button .fa-instagram {
+        width: 80%;
+    }
+  }
+  
+  * {
+      margin: 0;
+  }
+  html {
+      font-size: 16px;
+      font-family: Arial;
+  }
+  header {
+      border-bottom: 1px solid #eee;
+      height: 4rem;
+  }
+
+
+

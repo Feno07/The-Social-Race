@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="css/style-participe.css">
+
+<body class="animsition">
+	<!-- <div class="page-wrapper"> -->
+		<div class="page-content--bge5">
+			<div class="container">
+				<div class="login-wrap">
+					<div class="login-content">
+						<div class="login-logo">
+						    <div class="title"><a href=""><span><%= image_tag '/image/icone/pictogramme/retour.png', class: 'return' %></span></a>
+                            <p class="c_title">Participer</p>
+							</div>
+						</div>
+					</div>
+	<!-- <div class="details"> -->
+			<main class="main-detail">
+				<div class="detail-title">
+					<div class="title-campaign">
+						<p clas="campaign"><%= @campaign_selected.name %><span><%= image_tag '/image/icone/drapeau/canada.png', alt: 'canada', class: "flag" %></span></p>
+					</div>
+					<div class="campaign-detail">
+						<h4 class="post-description">Post type (modifiable)<span class="fas fa-pencil-alt"></span>
+						</h4>
+						<div class="description-article">
+							<p class="description">
+								<%= @campaign_selected.description %>
+							</p>
+						</div>
+						<!-- <div class="ligne de séparament"> -->
+						<div class="drawn-separate">
+							<hr>
+						</div>
+
+						<div>
+							<h4 class="post-description">Photos Proposées</h4>
+						</div>
+						<!-- <div class="image"> -->
+						<div class="Diaporama">
+							<% @campaign_galery_images.each do |cgi|%>
+								<%= image_tag '/image/fond/'+cgi.name, alt: 'montagne', class: 'diaporama-position' %>
+							<% end %>
+						</div>
+
+						<div class="botton-post">
+							<a href="<%= participe_campagne_path(id:@campaign_selected.id)%>" class=""></a>
+						</div>
+						<div class="button-camera">
+							<button type="submit" class="activation-camera" name="camera-activation" >
+								<span class="fa fa-camera"></span>
+							</button>
+						</div>
+					</div>
+				</div>	
+			</main>
+            <div class="footer-division">
+				<a href="">
+					<%= image_tag "/image/footer/Loupe.png", alt: "loop", class: 'picto' %>
+				</a>
+				<a href="">
+					<%= image_tag "/image/footer/Coeur.png", alt: "Coeur", class: 'picto' %>
+				</a>
+				<a href="">
+					<%= image_tag "/image/footer/Euro.png", alt: "Euro", class: 'picto' %>
+				</a>
+				<a href="<%= message_path %>">
+					<%= image_tag "/image/footer/Message.png", alt: "Message", class: 'picto' %>
+				</a>
+				<a href="<%= profil_path %>">
+					<%= image_tag "/image/footer/Profile.png", alt: "Profile", class: 'picto' %>
+				</a>
+			</div>
+			    </div>
+	        </div>
+        </div>
+</body>

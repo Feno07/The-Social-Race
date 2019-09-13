@@ -1,0 +1,82 @@
+<!-- <link rel="stylesheet" href="app/assets/stylesheets/c_disponible/style-campagne.css"> -->
+
+<body class="animsition">
+	<!-- <div class="page-wrapper"> -->
+		<div class="page-content--bge5">
+			<div class="container">
+				<div class="login-wrap">
+					<div class="login-content">
+						<div class="login-logo">
+							<div class="title">
+								<span><a href="<%= fbVerification_path(provider: 'facebook') %>"><%= image_tag '/image/icone/pictogramme/retour.png', class: 'return' %></span></a>
+								<p class="c_title">Campagne disponible</p>
+							</div>
+						</div>
+						
+					</div>
+					<header>
+						<div id="menu-container">
+							<div id="menu-wrapper">
+								<div id="hamburger-menu"><span></span><span></span><span></span></div>
+								<!-- hamburger-menu -->
+							</div>
+							<!-- menu-wrapper -->
+							<ul class="menu-list accordion">
+								<li id="nav1" class="toggle accordion-toggle"> 
+									<span class="icon-plus"></span>
+									<a class="menu-link" href="#">Classement par:</a>
+								</li>
+								<!-- accordion-toggle -->
+								<ul class="menu-submenu accordion-content">
+									<li><a class="head" href="#">Date</a></li>
+									<li><a class="head" href="#">Du plus cher au moins cher</a></li>
+									<li><a class="head" href="#">Du moins au plus cher</a></li>
+									<li><a class="head" href="#">Du plus ancien au plus récent</a></li>
+									<li><a class="head" href="#">Pays</a></li>
+								</ul>
+							</div> 
+						</header>
+						<% @campaigns.each do |camp| %>
+						<main class="main-card">
+							<a href="<%= postCampaign_path(id: camp.id)%>">
+								<article class="card">
+									<div class="image">
+										<%= image_tag '/image/fond/'+camp.thumbnail, alt: 'building', class: "img-report" %>
+									</div>
+									<div class="entry">
+										<div class="container">
+											<div class="text">
+												<p class="text-description"><%= camp.description %><span class="meta"><%= image_tag '/image/icone/drapeau/canada.png', alt: 'canada', class: "img-flag" %></span></br><%= camp.date.strftime("%d %B %Y ")  %></br><%= camp.hashtag %></p>
+											</div>
+										</div>
+									</div>
+									<div class="money">
+										<p class="money-detail"><%= camp.price %>€</p>
+									</div>
+								</article>
+							</a>
+						</main>
+						<% end %>
+						<div class="footer-division">
+							<a href="">
+								<%= image_tag "/image/footer/Loupe.png", alt: "loop", class: 'picto' %>
+							</a>
+							<a href="">
+								<%= image_tag "/image/footer/Coeur.png", alt: "Coeur", class: 'picto' %>
+							</a>
+							<a href="">
+								<%= image_tag "/image/footer/Euro.png", alt: "Euro", class: 'picto' %>
+							</a>
+							<a href="<%= message_path %>">
+								<%= image_tag "/image/footer/Message.png", alt: "Message", class: 'picto' %>
+							</a>
+							<a href="<%= profil_path %>">
+								<%= image_tag "/image/footer/Profile.png", alt: "Profile", class: 'picto' %>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <script src="app/assets/javascripts/main-disponible.js"></script> -->
+		</body>
+

@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="css/style-message.css">
+
+<body class="animsition">
+	<!-- <div class="page-wrapper"> -->
+		<div class="page-content--bge5">
+			<div class="container">
+				<div class="login-wrap">
+					<div class="login-content">
+						<div class="login-logo">
+							<div class="title"><span><a href="<%= fbVerification_path %>"><%= image_tag '/image/icone/pictogramme/retour.png', class: 'return' %></span></a>
+                            <p class="c_title">Mes messages</p>
+							</div>
+						</div>
+				<div class="menu-message">
+					<div class="menu">
+					  <div class="menu-item inbox-in">
+						<p>Réception</p>
+					  </div>
+					  <div class="menu-item inbox-out">
+						<p>Envoyés</p>
+					  </div>
+					  <div class="menu-item recycle">
+						<p>Corbeille</p>
+					  </div>
+					</div>	
+				</div>	
+			</div>
+
+			<main class="main-card">
+				<article class="card">
+					<div class="image">
+						<%= image_tag '/image/icone/pictogramme/mail.png', alt: 'mail', class:'img-envelope'%>
+					</div>
+					<div class="entry">
+						<div class="container">
+							<div class="text">
+								<p class="text-description">Bauhoss</br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Officiis quod repellat
+									<br>obcaecati, tempora, est inventore.</p>
+							</div>
+						</div>
+					</div>
+					<div class="parametere">
+						<p class="advence">10:25</p>
+					</div>
+				</article>
+			</main>
+			<main class="main-card">
+					<article class="card">
+						<div class="image">
+							<%= image_tag '/image/icone/pictogramme/mail.png', alt: 'mail', class:'img-envelope'%>
+						</div>
+						<div class="entry">
+							<div class="container">
+								<div class="text">
+									<p class="text-description">Picasso 27</br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Officiis quod repellat
+										<br>obcaecati, tempora, est inventore.</p>
+								</div>
+							</div>
+						</div>
+						<div class="parametere">
+							<p class="advence">13 juin</p>
+						</div>
+					</article>
+			</main>
+			<main class="main-card">
+					<article class="card">
+						<div class="image">
+							<%= image_tag '/image/icone/pictogramme/mail.png', alt: 'mail', class:'img-envelope'%>
+						</div>
+						<div class="entry">
+							<div class="container">
+								<div class="text">
+									<p class="text-description">Fridak KD</br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Officiis quod repellat
+										<br>obcaecati, tempora, est inventore.</p>
+								</div>
+							</div>
+						</div>
+						<div class="parametere">
+                            <%= image_tag '/image/icone/pictogramme/trash-red.png', alt: 'trash' %>
+						</div>
+					</article>
+			</main>
+			<main class="main-card">
+					<article class="card">
+						<div class="image">
+							<%= image_tag '/image/icone/pictogramme/mail.png', alt: 'mail', class:'img-envelope'%>
+						</div>
+						<div class="entry">
+							<div class="container">
+								<div class="text">
+									<p class="text-description">Bauhoss 91</br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Officiis quod repellat
+										<br>obcaecati, tempora, est inventore.</p>
+								</div>
+							</div>
+						</div>
+						<div class="parametere">
+							<p class="advence">25 Mai</p>
+						</div>
+					</article>
+				</main>
+				<main class="main-card">
+						<article class="card">
+							<div class="image">
+								<%= image_tag '/image/icone/pictogramme/mail.png', alt: 'mail', class:'img-envelope'%>
+							</div>
+							<div class="entry">
+								<div class="container">
+									<div class="text">
+										<p class="text-description">Davinci L4</br>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Officiis quod repellat
+											<br>obcaecati, tempora, est inventore.</p>
+									</div>
+								</div>
+							</div>
+							<div class="parametere">
+								<p class="advence">03 Avril</p>
+							</div>
+						</article>
+					</main>
+
+					<div class="send-message">
+						<button><%= image_tag '/image/icone/pictogramme/edit-message.png', alt: 'edit' %></button>	
+					</div>
+                        
+                   <div class="footer-division">
+						<a href="">
+							<%= image_tag "/image/footer/Loupe.png", alt: "loop", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Coeur.png", alt: "Coeur", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Euro.png", alt: "Euro", class: 'picto' %>
+						</a>
+						<a href="<%= message_path %>">
+							<%= image_tag "/image/footer/Message.png", alt: "Message", class: 'picto' %>
+						</a>
+						<a href="<%= profil_path %>">
+							<%= image_tag "/image/footer/Profile.png", alt: "Profile", class: 'picto' %>
+						</a>
+					</div>
+			    </div>
+	        </div>
+        </div>
+</body>

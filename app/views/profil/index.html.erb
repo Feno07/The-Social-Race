@@ -1,0 +1,167 @@
+<link rel="stylesheet" href="css/style-profil.css">
+<link rel="stylesheet" href="css/swiper.min.css.css">
+
+<body class="animsition">
+	<!-- <div class="page-wrapper"> -->
+		<div class="page-content--bge5">
+			<div class="container">
+				<div class="login-wrap">
+					<div class="login-content">
+						<div class="login-logo2">
+							<div class="title"><span><a href="<%= fbVerification_path %>"><%= image_tag '/image/icone/pictogramme/retour.png', class: 'return' %></span></a>
+                            <p class="c_title">Mon profil</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-profil">
+						<div class="description-profil">
+							<div class="img-profil">
+								<%= image_tag "/image/icone/pictogramme/man.png", alt: "man", class: 'img' %>
+							</div>
+							<div class="description">
+								<h4 class="name">Jean-Baptiste GIROGUY</h4>
+								<h6 class="post">Influenceur</h6>
+								<p class="detail">
+									Mail: Jean-baptisteGiroguy@social.com <br/>
+									Membre depuis 2018 <br/>
+									@Influenceur @TheSocialRace
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="statistic">
+						<div class="stat-campagne">
+							<span>5</span>
+							<p>Campagnes</p>
+						</div>
+						<div class="stat-money">
+							<span>250 €</span>
+							<p>Relevé</p>
+						</div>
+						<div class="stat-other">
+							<span>45</span>
+							<p>Lorem Ipsum</p>
+						</div>
+					</div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-campagne">
+                                    <div class="swiper-title">
+                                        <h4>Mes campagnes</h4>
+                                    </div>
+                                    <div class="swiper-head">
+                                        <%= image_tag "/image/fond/montagne.jpg", alt: "montagne", class: 'slide-image'%>
+                                        <div class="swiper-detail">
+                                            <div class="heart-like">
+                                                <%= image_tag "/image/icone/pictogramme/Heart.png", alt: "heart", class: 'heart-like'%>
+                                            </div>
+                                            <p class="number-like">1500</p> 
+                                            <p class="country">Caméroun</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <%= image_tag "/image/fond/montagne1.jpg", alt: "montagne", class: 'slide-image'%>
+                                <div class="swiper-detail">
+                                    <div class="heart-like">
+                                        <%= image_tag "/image/icone/pictogramme/Heart.png", alt: "heart", class: 'heart-like'%>
+                                    </div>
+                                    <p class="number-like">365</p>
+                                    <p class="country">France</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <%= image_tag "/image/fond/rivière.jpg", alt: "rivière", class: 'slide-image'%>
+                                <div class="swiper-detail">
+                                    <div class="heart-like">
+                                        <%= image_tag "/image/icone/pictogramme/Heart.png", alt: "heart", class: 'heart-like'%>
+                                    </div>
+                                    <p class="number-like">500</p>
+                                    <p class="country">Madagascar</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <%= image_tag "/image/fond/rivière1.jpg", alt: "rivière1", class: 'slide-image'%>
+                                <div class="swiper-detail">
+                                        div class="heart-like">
+                                        <%= image_tag "/image/icone/pictogramme/Heart.png", alt: "heart", class: 'heart-like'%>
+                                    </div>
+                                    <p class="number-like">120</p>
+                                    <p class="country">Tunésie</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <%= image_tag "/image/fond/ville.jpg", alt: "ville", class: 'slide-image'%>
+                                <div class="swiper-detail">
+                                        <div class="heart-like">
+                                        <%= image_tag "/image/icone/pictogramme/Heart.png", alt: "heart", class: 'heart-like'%>
+                                    </div>
+                                    <p class="number-like">400</p>
+                                    <p class="country">Espagne</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+								<div class="separate">
+									<hr>
+								</div>
+
+									<div class="network">
+										<div class="logo-network">
+											<div class="net-instagram">
+												<%= image_tag "/image/icone/network/instagram simple.png", alt: "instagram"%>
+											</div>
+											<div class="net-facebook">	
+												<%= image_tag "/image/icone/network/facebook-logo.png", alt: "facebook"%>
+											</div>
+											<div class="net-tiktok">
+												<%= image_tag "/image/icone/network/tiktok.png", alt: "tiktok"%>
+											</div>
+											<div class="net-pinterest">
+												<%= image_tag "/image/icone/network/pinterest-logo.png", alt: "pinterest"%>
+
+											</div>
+											<div class="net-linkedin">
+												<%= image_tag "/image/icone/network/linkedin-logo.png", alt: "linkedin-logo"%>
+											</div>
+											<div class="net-twitter">
+												<%= image_tag "/image/icone/network/twitter-logo.png", alt: "twitter"%>
+											</div>
+										</div>
+									</div>
+
+									<div class="button">
+										<button class="pi">P.I</button>
+									</div>
+
+									<div class="button1">
+										<button class="charter">Charte</button>
+									</div>
+						</div>
+					</div>
+                    <div class="footer-division">
+						<a href="">
+							<%= image_tag "/image/footer/Loupe.png", alt: "loop", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Coeur.png", alt: "Coeur", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Euro.png", alt: "Euro", class: 'picto' %>
+						</a>
+						<a href="<%= message_path %>">
+							<%= image_tag "/image/footer/Message.png", alt: "Message", class: 'picto' %>
+						</a>
+						<a href="<%= profil_path %>">
+							<%= image_tag "/image/footer/Profile.png", alt: "Profile", class: 'picto' %>
+						</a>
+					</div>
+			    </div>
+	        </div>
+        </div>
+        <script src="js/profil/main-profil.js"></script>
+</body>

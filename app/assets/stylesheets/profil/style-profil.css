@@ -1,0 +1,215 @@
+.login-logo2 {
+    text-align: center;
+    margin-bottom: 160px;
+}
+
+/* menu profil*/
+.content-profil{
+    display: block;
+    margin-top: -95px;
+    margin-left: 45px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-profil .img{
+    float: left;
+    width: 120px;
+    height: 120px;
+    clear: both;
+}
+
+.description{
+    font-family: 'roboto', sans-serif;
+    padding-left: 130px;
+}
+
+.description .name{
+    font-weight: bold;
+    font-size: 17pt;
+    padding-bottom: 8px;
+    color: #303030;
+}
+
+.description .post{
+    text-transform: uppercase;
+    color: #303030;
+    padding-bottom: 8px;
+}
+
+.description .detail{
+    color: #c1c1c1;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+/*Statistique profil*/
+.statistic{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    margin: 10px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #303030;
+}
+
+.stat-campagne{
+    margin-left: 45px;
+    text-align: center;
+}
+
+
+.stat-money{
+    padding-left: 45px;
+    text-align: center;
+}
+
+
+.stat-other{
+    padding-left: 45px;
+    text-align: center;
+}
+
+
+/*Carrousel-campagne profil*/
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/*container swiper*/
+.swiper-title h4{
+ font-family: 'roboto', sans-serif;
+ font-size: 16px;
+ color: #fff;
+ text-decoration: underline;
+ position: relative;
+ right: 175px;
+ bottom: -35px;
+}
+
+.swiper-head .slide-image{
+    border-radius: 15px;
+    width: 90%;
+    height: 50%;
+}
+
+.swiper-head .heart-like{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    left: 185px;
+    bottom: 75px;
+}
+
+.swiper-head .number-like{
+    font-family: 'roboto', sans-serif;
+    font-size: 30px;
+    font-size: 45px;
+    position: relative;
+    color: white;
+    right: 95px;
+    bottom: 60px;
+}
+
+.wrapInfoPost .heart-like{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    bottom: -6px;
+    left: -10px;
+}
+
+
+/*barre de coupure*/
+.separate hr {
+    border: none;
+    border-top: 1px solid #333;
+    color: #afaeae;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin: 10px 100px;
+}
+
+.separate hr:after {
+    background: #afaeae;
+}
+
+/*network-logo*/
+.logo-network{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    margin: 15px 10px 90px 10px;
+}
+
+.logo-network img{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+/*button fin*/
+
+.button{
+    position: relative;
+    width: 80px;
+    height: 30px;
+    float: left;
+    bottom: 20px;
+    left: 70px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    border-radius: 7px;
+}
+
+.button .pi{
+    color: white;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 3px;
+}
+
+.button1{
+    position: relative;
+    bottom: 50px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    border-radius: 7px;
+    clear: both;
+    width: 80px;
+    height: 30px;
+    left: 265px;
+}
+
+.button1 .charter{
+    color: white;
+    text-align: center;
+    padding-left: 9px;
+    padding-top: 3px;
+}

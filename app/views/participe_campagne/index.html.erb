@@ -1,0 +1,94 @@
+<link rel="stylesheet" href="css/participe-campagne.css">
+
+<body class="animsition">
+	<!-- <div class="page-wrapper"> -->
+		<div class="page-content--bge5">
+			<div class="container">
+				<div class="login-wrap">
+					<div class="login-content">
+						<div class="login-logo">
+							<div class="title"><span><a href="<%= fbVerification_path(provider:'facebook') %>"><%= image_tag '/image/icone/pictogramme/retour.png', class: 'return' %></span></a>
+                            <p class="c_title">Participer campagne A</p>
+							</div>
+						</div>
+					</div>
+						<!-- <div class="details"> -->
+			<main class="main-detail">
+				<div class="detail-title">
+					<div class="title-campaign">
+						<p clas="campaign">Campagne A <span><%= image_tag '/image/Icone/Drapeau/canada.png', alt: 'canada', class: "flag" %></span></p>
+					</div>
+					<div class="campaign-detail">
+
+						<div class="description-article">
+							<%= image_tag '/image/fond/montagne1.jpg', alt: 'montagne', class: 'float-image' %>
+							<h4 class="post-description">Lorem ipsum (modifiable)<span class="fas fa-pencil-alt"></span>
+							</h4>
+							<p class="description">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quibusdam, 
+								<br>assumenda possimus iure nobis id temporibus dolor ab. Cupiditate quo in minima? 
+							</p>
+						</div>
+						<div class="drawn-separate">
+							<hr>
+						</div>
+
+						<div class="choice-networks">
+							<div class="network-left">
+								<div class="net-instagram">
+									<input type="radio" name="Instagram" id="instagram" value="instagram">
+									<span class="fab fa-instagram"></span><label for="instagram">Instagram</label><br>
+								</div>
+								<div class="net-tiktok">
+									<input type="radio" name="Tik Tok" id="tiktok" value="tiktok">
+									<span><%= image_tag '/image/icone/network/tiktok.png', alt: 'tiktok', class: "tiktok" %></span><label for="tiktok">Tik Tok</label><br>
+								</div>
+								<div class="net-linkedin">
+									<input type="radio" name="Linkedin" id="linkedin" value="linkedin">
+									<span class="fab fa-linkedin-in"></span><label for="linkedin">Linkedin</label><br>
+								</div>
+							</div>
+							<div class="network-right">
+								<div class="net-facebook">
+									<input type="radio" name="Facebook" id="facebook" value="facebook">
+									<span class="fab fa-facebook-square"></span><label for="facebook">Facebook</label><br>
+								</div>
+								<div class="net-pinterest">
+									<input type="radio" name="Pinterest" id="pinterest" value="pinterest">
+									<span class="fab fa-pinterest"></span><label for="pinterest">Pinterest</label><br>
+								</div>
+								<div class="net-twitter">
+									<input type="radio" name="Twitter" id="twitter" value="twitter">
+									<span class="fab fa-twitter"></span><label for="twitter">Twitter</label><br>
+								</div>
+							</div>
+						</div>
+					<div class="buttom-validation">
+						<div class="buttom-submit">
+							<button type="submit">Poster</button>
+						</div>
+						<div class="buttom-anulation">
+							<button type="disabled">Retour</button>
+						</div>
+					</div>
+                    <div class="footer-division">
+						<a href="">
+							<%= image_tag "/image/footer/Loupe.png", alt: "loop", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Coeur.png", alt: "Coeur", class: 'picto' %>
+						</a>
+						<a href="">
+							<%= image_tag "/image/footer/Euro.png", alt: "Euro", class: 'picto' %>
+						</a>
+						<a href="<%= message_path %>">
+							<%= image_tag "/image/footer/Message.png", alt: "Message", class: 'picto' %>
+						</a>
+						<a href="<%= profil_path %>">
+							<%= image_tag "/image/footer/Profile.png", alt: "Profile", class: 'picto' %>
+						</a>
+					</div>
+			    </div>
+	        </div>
+        </div>
+</body>
